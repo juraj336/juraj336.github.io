@@ -11,7 +11,6 @@
 
 .Mainbody {
   font-family: 'Merriweather', serif;
-  background-color: #110b0a;
   text-align: center;
 }
 
@@ -20,5 +19,5 @@
 }
 
 body{
-  background-color: black;
+  background-color: #0a0100;
 }
