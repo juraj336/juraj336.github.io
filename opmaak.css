@@ -10,11 +10,11 @@
 }
 
 .parallax h1 {
-
+    font-family: 'Quantico', sans-serif;
+    text-align: center;
 }
 
 .Mainbody {
-  font-family: 'Quantico', sans-serif;
   text-align: center;
 }
 
