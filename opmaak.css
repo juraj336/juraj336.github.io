@@ -1,7 +1,7 @@
 .parallax {
     background-image: url("https://cdn.suwalls.com/wallpapers/space/red-nebula-hiding-behind-the-dark-planet-51162-1920x1080.jpg");
 
-    height: 1000px;
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
