@@ -12,6 +12,8 @@
 .parallax h1 {
     font-family: 'Quantico', sans-serif;
     text-align: center;
+    padding-top: 30px;
+    text-color: white;
 }
 
 .Mainbody {
