@@ -40,21 +40,20 @@ a:hover, a:active {
 /* Begin van specefieke stijling */
 
 /* Stijling van het menu */
-nav {
-  position: fixed;
-}
+
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 li {
   display: inline-block;
   float: left;
-  margin-right: 1px;
-  z-index: 2;
+  z-index: 1;
 }
 
 li a {
@@ -67,7 +66,7 @@ li a {
   color: #fff;
   background: #2f3036;
   text-decoration: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 li:hover a {
@@ -79,30 +78,36 @@ li:hover ul a {
         color: #2f3036;
         height: 40px;
         line-height: 40px;
+        z-index: 1;
 }
 
 li:hover ul a:hover {
     background: #19c589;
     color: #fff;
+    z-index: 1;
 }
 
 li ul {
     display: none;
+    z-index: 1;
 }
 
 li ul li {
     display: block;
     float: none;
+    z-index: 1;
 }
 
 li ul li a {
     width: auto;
     min-width: 100px;
     padding: 0 20px;
+    z-index: 1;
 }
 
 ul li a:hover + .hidden, .hidden:hover {
     display: block;
+    z-index: 1;
 }
 
 /* Responsive menu: */
@@ -116,6 +121,7 @@ ul li a:hover + .hidden, .hidden:hover {
     text-align: center;
     padding: 10px 0;
     display: none;
+    z-index: 1;
 }
 /*De vorm van het menu is een checkbox, daarna komt de lijst er uit*/
 input[type=checkbox]{
@@ -126,26 +132,40 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
-@media only screen and (max-width : 760px){
+@media screen and (max-width : 480px){
 
 
     ul {
         position: static;
         display: none;
+        z-index: 1;
     }
 
     li {
         margin-bottom: 1px;
+        z-index: 1;
     }
 
     ul li, li a {
         width: 100%;
+        z-index: 1;
     }
 
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
+        z-index: 1;
     }
+
+    /* De overige elementen worden responsive gemaakt */
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 2%;
+      margin-top: 2%;
+
+    }
+
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -166,20 +186,17 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .logo img  {
-  min-width: 20%;
   width: 20%;
-  min-height: 40%;
   height: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* De Z-index is -1 zodat het menu er over heen gaat :) */
-  z-index: 1;
+  z-index: 0;
 }
 
 .container {
-  max-width: 50%;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 2%;
   margin-top: 2%;
@@ -211,4 +228,78 @@ input[type=checkbox]:checked ~ #menu{
   font-family: 'Gentium Book Basic', serif;
   overflow: hidden;
   letter-spacing: 2px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Responsive sectie: */
+
+/* Responsive menu: */
+
+/*De show menu knop wordt verborgen*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(38, 7, 7);
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    z-index: 1;
+}
+/*De vorm van het menu is een checkbox, daarna komt de lijst er uit*/
+input[type=checkbox]{
+    display: none;
+}
+/*Als je op de ckeckbox klikt komt het menu er uit*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 480px){
+
+
+    ul {
+        position: static;
+        display: none;
+        z-index: 1;
+    }
+
+    li {
+        margin-bottom: 1px;
+        z-index: 1;
+    }
+
+    ul li, li a {
+        width: 100%;
+        z-index: 1;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+        z-index: 1;
+    }
+
+    /* De overige elementen worden responsive gemaakt */
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 4%;
+      margin-top: 2%;
+
+    }
+
+    .logo img  {
+      width: 50%;
+      height: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+
+
 }
