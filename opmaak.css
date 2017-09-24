@@ -117,7 +117,7 @@ ul li a:hover + .hidden, .hidden:hover {
 
 .containerinfo {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto; 
   margin-bottom: 2%;
   margin-top: 10%;
 }
@@ -131,6 +131,7 @@ ul li a:hover + .hidden, .hidden:hover {
   line-height: 250%;
 }
 
+
 .parallaxscroll {
   background-image: url('backgroundplanet.jpg');
   height: 100%;
@@ -139,6 +140,33 @@ ul li a:hover + .hidden, .hidden:hover {
   background-position: center;
   background-repeat: no-repeat;
   size: cover;
+}
+
+.parallaxscroll-info {
+  background-image: url('landscape.jpg');
+  height: 30%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parallaxscroll-info1 {
+  background-image: url('marslandscape.jpg');
+  height: 30%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parallaxscroll-info2 {
+  background-image: url('icelandscape.jpg');
+  height: 30%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
  .logo img  {
