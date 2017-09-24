@@ -110,64 +110,6 @@ ul li a:hover + .hidden, .hidden:hover {
     z-index: 1;
 }
 
-/* Responsive menu: */
-
-/*De show menu knop wordt verborgen*/
-.show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background: rgb(38, 7, 7);
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-    z-index: 1;
-}
-/*De vorm van het menu is een checkbox, daarna komt de lijst er uit*/
-input[type=checkbox]{
-    display: none;
-}
-/*Als je op de ckeckbox klikt komt het menu er uit*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
-
-@media screen and (max-width : 480px){
-
-
-    ul {
-        position: static;
-        display: none;
-        z-index: 1;
-    }
-
-    li {
-        margin-bottom: 1px;
-        z-index: 1;
-    }
-
-    ul li, li a {
-        width: 100%;
-        z-index: 1;
-    }
-
-    /*Display 'show menu' link*/
-    .show-menu {
-        display:block;
-        z-index: 1;
-    }
-
-    /* De overige elementen worden responsive gemaakt */
-    .container {
-      width: 90%;
-      margin: 0 auto;
-      margin-bottom: 2%;
-      margin-top: 2%;
-
-    }
-
-}
-
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .content {
@@ -291,8 +233,8 @@ input[type=checkbox]:checked ~ #menu{
     }
 
     .logo img  {
-      width: 50%;
-      height: 60%;
+      width: 60%;
+      height: 50%;
       position: absolute;
       top: 50%;
       left: 50%;
