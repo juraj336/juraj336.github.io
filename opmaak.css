@@ -202,7 +202,7 @@ ul li a:hover + .hidden, .hidden:hover {
   margin-bottom: 0;
   padding-left: 0;
   background-color: rgb(38, 7, 7);
-  color: rgb(255,255,255)
+  color: rgb(255,255,255);
 }
 
 .footer p {
