@@ -143,6 +143,7 @@ ul li a:hover + .hidden, .hidden:hover {
   background-position: center;
   background-repeat: no-repeat;
   size: cover;
+  position: relative;
 }
 
 .parallaxscroll-info {
