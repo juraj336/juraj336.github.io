@@ -45,12 +45,12 @@ a img {
   text-decoration: none;
 }
 
-.contentinfo a:link, .content a:visited {
+.contentinfo a:link, .contentinfo a:visited {
   color: rgb(173, 0, 0);
   text-decoration-line: none;
 }
 
-.contentinfo a:hover, .content a:active {
+.contentinfo a:hover, .contentinfo a:active {
   color: rgb(255, 0, 0);
   text-decoration: none;
 }
