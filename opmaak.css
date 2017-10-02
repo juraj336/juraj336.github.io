@@ -235,7 +235,6 @@ ul li a:hover + .hidden, .hidden:hover {
    width: 40%;
    height: 60%;
    margin-right: 20%;
-   margin-top: 20%;
    justify-content: flex-start;
  }
 
@@ -369,6 +368,14 @@ input[type=checkbox]:checked ~ #menu{
       padding: 0;
     }
 
+    .containerflex {
+      flex-direction: column;
+    }
+
+    .containerflex img {
+      align-self: center;
+      margin-right: 0px;
+    }
 
 
 }
