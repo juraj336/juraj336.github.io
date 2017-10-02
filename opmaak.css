@@ -377,5 +377,9 @@ input[type=checkbox]:checked ~ #menu{
       margin-right: 0px;
     }
 
+    .flextext p {
+      line-height: 150%;
+    }
+
 
 }
