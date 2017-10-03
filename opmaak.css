@@ -44,12 +44,12 @@ a img {
   text-decoration: none;
 }
 
-.contentinfo a:link, .content a:visited {
+.contentinfo a:link, .contentinfo a:visited {
   color: rgb(173, 0, 0);
   text-decoration-line: none;
 }
 
-.contentinfo a:hover, .content a:active {
+.contentinfo a:hover, .contentinfo a:active {
   color: rgb(255, 0, 0);
   text-decoration: none;
 }
@@ -142,6 +142,7 @@ ul li a:hover + .hidden, .hidden:hover {
   line-height: 250%;
 }
 
+
 .header {
   background-image: url(nebulaheader.jpg);
   width: 100%;
@@ -227,6 +228,47 @@ ul li a:hover + .hidden, .hidden:hover {
   letter-spacing: 2px;
   line-height: 250%;
 }
+
+ .containerflex {
+   width: 80%;
+   margin: 0 auto;
+   margin-bottom:  10%;
+   margin-top: 2%;
+   display: flex;
+
+}
+
+ .containerflex img {
+   width: 40%;
+   height: 60%;
+   margin-right: 20%;
+   justify-content: flex-start;
+ }
+
+ .flextext {
+   flex-direction: column;
+ }
+
+ .flextext p {
+   text-align: center;
+   color: #fff8f7;
+   font-family: 'Gentium Book Basic', serif;
+   overflow: hidden;
+   letter-spacing: 2px;
+   line-height: 250%;
+   justify-content: flex-end;
+ }
+
+ .flextext h1 {
+   text-align: center;
+   color: #fff8f7;
+   font-family: 'Gentium Book Basic', serif;
+   overflow: hidden;
+   letter-spacing: 2px;
+   line-height: 250%;
+
+ }
+
 
 .footer {
   width: 100%;
@@ -333,10 +375,25 @@ input[type=checkbox]:checked ~ #menu{
       padding: 0;
     }
 
+<<<<<<< HEAD
     body, html {
       background-image: url(starsbg.jpg);
     }
 
+=======
+    .containerflex {
+      flex-direction: column;
+    }
+
+    .containerflex img {
+      align-self: center;
+      margin-right: 0px;
+    }
+
+    .flextext p {
+      line-height: 150%;
+    }
+>>>>>>> a8285b133d74304f67bc6d5216ec3d80254c6a82
 
 
 }
