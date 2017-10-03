@@ -375,12 +375,11 @@ input[type=checkbox]:checked ~ #menu{
       padding: 0;
     }
 
-<<<<<<< HEAD
     body, html {
       background-image: url(starsbg.jpg);
     }
 
-=======
+
     .containerflex {
       flex-direction: column;
     }
@@ -393,7 +392,7 @@ input[type=checkbox]:checked ~ #menu{
     .flextext p {
       line-height: 150%;
     }
->>>>>>> a8285b133d74304f67bc6d5216ec3d80254c6a82
+
 
 
 }
