@@ -1,4 +1,14 @@
 /* Begint met algemene stijling */
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  border: 2px solid rgb(255,255,255);
+  height: 45%;
+  width: 40%;
+}
+
+
 
 body, html {
   width: 100%;
@@ -208,8 +218,6 @@ ul li a:hover + .hidden, .hidden:hover {
   width: 60%;
   height: 60%;
   float: right;
-  margin-top: 2%;
-  margin-left: 2%;
 }
 
 .container {
@@ -381,6 +389,31 @@ input[type=checkbox]:checked ~ #menu{
     }
 
     /* De overige elementen worden responsive gemaakt */
+    iframe {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5%;
+      border: 2px solid rgb(255,255,255);
+      height: 40%;
+      width: 90%;
+    }
+
+    .articlecontainer {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 2%;
+      margin-top: 2%;
+
+    }
+
+    .articlecontainer img {
+      width: 90%;
+      height: 60%;
+      float: right;
+    }
+
+
+
     .container {
       width: 90%;
       margin: 0 auto;
