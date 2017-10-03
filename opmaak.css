@@ -237,7 +237,7 @@ ul li a:hover + .hidden, .hidden:hover {
   line-height: 250%;
 }
 
-.articlecontainer p, h1 {
+.articlecontainer p {
   text-align: center;
   color: #fff8f7;
   font-family: 'Gentium Book Basic', serif;
