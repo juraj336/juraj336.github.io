@@ -164,14 +164,14 @@ ul li a:hover + .hidden, .hidden:hover {
 .imagegallery {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .gallery {
     margin: 10%;
     border: 1px solid rgb(38,7,7);
-    width: 25%;
+    width: 30%;
+    height: 100%;
     background-color: rgb(38,7,7)
 }
 
@@ -181,7 +181,7 @@ ul li a:hover + .hidden, .hidden:hover {
 
 .gallery img {
     width: 100%;
-    height: auto;
+    height: 30%
 }
 
 .desc {
