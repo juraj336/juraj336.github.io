@@ -246,9 +246,23 @@ input[type=checkbox]:checked ~ #menu{
 
 @media screen and (max-width : 480px){
 
-    .gallery {
-      margin-top: 20%;
-    margin-bottom: 20%;
+  .gallery {
+      margin: 10%;
+      margin-top: 15px;
+      border: 1px solid rgb(38,7,7);
+      width: 80%;
+      height: 100%;
+      background-color: rgb(38,7,7)
+  }
+
+  .gallery img {
+      width: 100%;
+      height: 10%;
+  }
+
+
+    .containerflex{
+      flex-direction: column;
     }
 
 
