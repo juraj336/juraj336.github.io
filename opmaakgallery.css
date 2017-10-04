@@ -11,6 +11,9 @@ iframe {
 
 
 body, html {
+  background-image: url(spacebg.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   line-height: 1.8;
@@ -43,27 +46,6 @@ a img {
   color: rgb(250, 0, 0);
   text-decoration: none;
 }
-
-.content a:link, .content a:visited {
-  color: rgb(173, 0, 0);
-  text-decoration-line: none;
-}
-
-.content a:hover, .content a:active {
-  color: rgb(255, 0, 0);
-  text-decoration: none;
-}
-
-.contentinfo a:link, .contentinfo a:visited {
-  color: rgb(173, 0, 0);
-  text-decoration-line: none;
-}
-
-.contentinfo a:hover, .contentinfo a:active {
-  color: rgb(255, 0, 0);
-  text-decoration: none;
-}
-
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Begin van specefieke stijling */
@@ -153,82 +135,7 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 
-.header {
-  background-image: url(nebulaheader.jpg);
-  width: 100%;
-  height: 25%;
-  display: table;
-}
-
-.header h1 {
-  margin-top: 0;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-
-.parallaxscroll {
-  background-image: url('backgroundplanet.jpg');
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  size: cover;
-  position: relative;
-}
-
-.parallaxscroll-info {
-  background-image: url('landscape.jpg');
-  height: 30%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.parallaxscroll-info1 {
-  background-image: url('marslandscape.jpg');
-  height: 30%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.parallaxscroll-info2 {
-  background-image: url('icelandscape.jpg');
-  height: 30%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
- .logo img  {
-  width: 20%;
-  height: 40%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.articlecontainer img {
-  width: 60%;
-  height: 60%;
-  float: right;
-}
-
 .container {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 2%;
-  margin-top: 2%;
-
-}
-
-.articlecontainer {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 2%;
@@ -278,80 +185,6 @@ ul li a:hover + .hidden, .hidden:hover {
   font-family: 'Gentium Book Basic', serif;
   overflow: hidden;
 }
-
-
-
-.articlecontainer p {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.articlecontainer h1 {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-}
-
-.articlecontainer h2 {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-  margin-bottom: 0;
-}
-
- .containerflex {
-   width: 80%;
-   margin: 0 auto;
-   margin-bottom:  10%;
-   margin-top: 2%;
-   display: flex;
-
-}
-
- .containerflex img {
-   width: 40%;
-   height: 60%;
-   margin-right: 20%;
-   align-self: center;
-   justify-content: flex-start;
- }
-
- .flextext {
-   flex-direction: column;
- }
-
- .flextext p {
-   text-align: center;
-   color: #fff8f7;
-   font-family: 'Gentium Book Basic', serif;
-   overflow: hidden;
-   letter-spacing: 2px;
-   line-height: 250%;
-   justify-content: flex-end;
- }
-
- .flextext h1 {
-   text-align: center;
-   color: #fff8f7;
-   font-family: 'Gentium Book Basic', serif;
-   overflow: hidden;
-   letter-spacing: 2px;
-   line-height: 250%;
-
- }
-
 
 .footer {
   width: 100%;
@@ -404,6 +237,11 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 @media screen and (max-width : 480px){
+
+    .gallery {
+      margin-top: 20%;
+    margin-bottom: 20%;
+    }
 
 
 
@@ -482,25 +320,6 @@ input[type=checkbox]:checked ~ #menu{
       margin: 0;
       padding: 0;
     }
-
-    body, html {
-      background-image: url(starsbg.jpg);
-    }
-
-
-    .containerflex {
-      flex-direction: column;
-    }
-
-    .containerflex img {
-      align-self: center;
-      margin-right: 0px;
-    }
-
-    .flextext p {
-      line-height: 150%;
-    }
-
 
 
 }
