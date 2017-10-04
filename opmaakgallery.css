@@ -118,23 +118,6 @@ ul li a:hover + .hidden, .hidden:hover {
 /*  background-image: url(starsbg.jpg); */
 }
 
-.containerinfo {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 4%;
-  margin-top: 2%;
-}
-
-.containerinfo p, h1, h2 {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-}
-
-
 .container {
   width: 50%;
   margin: 0 auto;
@@ -163,8 +146,14 @@ ul li a:hover + .hidden, .hidden:hover {
 .gallery {
     margin: 5%;
     border: 1px solid rgb(38,7,7);
-    width: 180px;
+    box-shadow: 0 4px 8px 0 rgba(255,0,0,0.5);
+    transition: 0.3s;
+    width: 20%;
     background-color: rgb(38,7,7)
+}
+
+.gallery:hover {
+    box-shadow: 0 8px 16px 0 rgba(38,7,7,0.5);
 }
 
 .gallery:hover {
