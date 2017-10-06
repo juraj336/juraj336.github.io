@@ -166,60 +166,6 @@ ul li a:hover + .hidden, .hidden:hover {
   vertical-align: middle;
 }
 
-
-.parallaxscroll {
-  background-image: url('backgroundplanet.jpg');
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  size: cover;
-  position: relative;
-}
-
-.parallaxscroll-info {
-  background-image: url('landscape.jpg');
-  height: 30%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.parallaxscroll-info1 {
-  background-image: url('marslandscape.jpg');
-  height: 30%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.parallaxscroll-info2 {
-  background-image: url('icelandscape.jpg');
-  height: 30%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
- .logo img  {
-  width: 20%;
-  height: 40%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.articlecontainer img {
-  width: 60%;
-  height: 60%;
-  float: right;
-}
-
 .container {
   width: 50%;
   margin: 0 auto;
@@ -245,6 +191,7 @@ ul li a:hover + .hidden, .hidden:hover {
   line-height: 250%;
 }
 
+
 /* Imagegallery: */
 .imagegallery {
   display: flex;
@@ -254,10 +201,19 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 .gallery {
-    margin: 5%;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     border: 1px solid rgb(38,7,7);
-    width: 180px;
+    box-shadow: 0 4px 8px 0 rgba(255,0,0,0.5);
+    transition: 0.3s;
+    width: 20%;
     background-color: rgb(38,7,7)
+}
+
+.gallery:hover {
+    box-shadow: 0 8px 16px 0 rgba(38,7,7,0.5);
 }
 
 .gallery:hover {
@@ -278,80 +234,6 @@ ul li a:hover + .hidden, .hidden:hover {
   font-family: 'Gentium Book Basic', serif;
   overflow: hidden;
 }
-
-
-
-.articlecontainer p {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.articlecontainer h1 {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-}
-
-.articlecontainer h2 {
-  text-align: center;
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
-  margin-bottom: 0;
-}
-
- .containerflex {
-   width: 80%;
-   margin: 0 auto;
-   margin-bottom:  10%;
-   margin-top: 2%;
-   display: flex;
-
-}
-
- .containerflex img {
-   width: 40%;
-   height: 60%;
-   margin-right: 20%;
-   align-self: center;
-   justify-content: flex-start;
- }
-
- .flextext {
-   flex-direction: column;
- }
-
- .flextext p {
-   text-align: center;
-   color: #fff8f7;
-   font-family: 'Gentium Book Basic', serif;
-   overflow: hidden;
-   letter-spacing: 2px;
-   line-height: 250%;
-   justify-content: flex-end;
- }
-
- .flextext h1 {
-   text-align: center;
-   color: #fff8f7;
-   font-family: 'Gentium Book Basic', serif;
-   overflow: hidden;
-   letter-spacing: 2px;
-   line-height: 250%;
-
- }
-
 
 .footer {
   width: 100%;
