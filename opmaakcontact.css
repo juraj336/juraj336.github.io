@@ -1,0 +1,384 @@
+/* Begint met algemene stijling */
+
+body, html {
+  width: 100%;
+  height: 100%;
+  line-height: 1.8;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-right: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+  outline: 0;
+}
+
+a img {
+  border: 0px;
+  text-decoration: none;
+}
+
+/* De linkstijling */
+#menu a:link, #menu a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+}
+
+#menu a:hover, #menu a:active {
+  color: rgb(250, 0, 0);
+  text-decoration: none;
+}
+
+.content a:link, .content a:visited {
+  color: rgb(173, 0, 0);
+  text-decoration-line: none;
+}
+
+.content a:hover, .content a:active {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+.contentinfo a:link, .contentinfo a:visited {
+  color: rgb(173, 0, 0);
+  text-decoration-line: none;
+}
+
+.contentinfo a:hover, .contentinfo a:active {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Begin van specefieke stijling */
+
+/* Stijling van het menu */
+
+#menu {
+  width: 100%;
+  background-color: rgb(38, 7, 7);
+  z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: block;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+/*  float: left; */
+}
+
+li a {
+  display:inline-block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+li:hover ul a {
+        background: rgba(38, 7, 7, 0.5);
+        height: 40px;
+        line-height: 40px;
+}
+
+li:hover ul a:hover {
+    background: #000000;
+   color: #fff;
+}
+
+li ul {
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+
+.header {
+  background-image: url(headercontact.jpg);
+  width: 100%;
+  height: 25%;
+  display: table;
+}
+
+.header h1 {
+  margin-top: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+#legediv {
+  width: 100%;
+  height: 50.4px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Responsive sectie: */
+
+/* Responsive menu: */
+
+/*De show menu knop wordt verborgen*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(38, 7, 7);
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*De vorm van het menu is een checkbox, daarna komt de lijst er uit*/
+input[type=checkbox]{
+    display: none;
+}
+/*Als je op de ckeckbox klikt komt het menu er uit*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 480px){
+
+
+
+    ul {
+        position: static;
+        display: none;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    ul li, nav li a {
+        width: 100%;
+    }
+
+    /*De show menu link*/
+    .show-menu {
+        display:block;
+    }
+
+    /* De overige elementen worden responsive gemaakt */
+
+    #legediv {
+      width: 100%;
+      height: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      background-image: url(starsbg.jpg);
+    }
+
+
+    .containerflex {
+      flex-direction: column;
+    }
+
+    .containerflex img {
+      align-self: center;
+      margin-right: 0px;
+    }
+
+    .flextext p {
+      line-height: 150%;
+    }
+
+
+
+}
