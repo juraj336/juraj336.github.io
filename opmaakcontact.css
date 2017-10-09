@@ -11,6 +11,10 @@ body, html {
 }
 
 body {
+  background-image: url(space4k.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
     background-color: rgb(0, 0, 0);
 }
 
@@ -126,12 +130,11 @@ ul li a:hover + .hidden, .hidden:hover {
 
 #form-main{
 	width:100%;
-	float:left;
 	padding-top:0px;
 }
 
 #form-div {
-	background-color:rgba(72,72,72,0.4);
+	background-color:rgba(37,7,7,0.4);
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
@@ -233,7 +236,7 @@ input:focus, textarea:focus {
 	width: 100%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #3498db;
+	background-color: rgb(37,7,7);
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -247,7 +250,7 @@ input:focus, textarea:focus {
 
 #button-blue:hover{
 	background-color: rgba(0,0,0,0);
-	color: #0493bd;
+	color:rgb(37,7,7);
 }
 
 .submit:hover {
@@ -303,6 +306,24 @@ input:focus, textarea:focus {
   height: 50.4px;
   margin: 0;
   padding: 0;
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  background-color: rgb(38, 7, 7);
+  color: rgb(255,255,255);
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+  letter-spacing: 2px;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -364,21 +385,6 @@ input[type=checkbox]:checked ~ #menu{
     body, html {
       background-image: url(starsbg.jpg);
     }
-
-
-    .containerflex {
-      flex-direction: column;
-    }
-
-    .containerflex img {
-      align-self: center;
-      margin-right: 0px;
-    }
-
-    .flextext p {
-      line-height: 150%;
-    }
-
 
 
 }
