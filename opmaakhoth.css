@@ -1,0 +1,375 @@
+/* Begint met algemene stijling */
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  border: 2px solid rgb(255,255,255);
+  height: 45%;
+  width: 40%;
+}
+
+
+
+body, html {
+  width: 100%;
+  height: 100%;
+  line-height: 1.8;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-right: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+a {
+  outline: 0;
+}
+
+a img {
+  border: 0px;
+  text-decoration: none;
+}
+
+/* De linkstijling */
+#menu a:link, #menu a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+}
+
+#menu a:hover, #menu a:active {
+  color: rgb(250, 0, 0);
+  text-decoration: none;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Begin van specefieke stijling */
+
+/* Stijling van het menu */
+
+#menu {
+  width: 100%;
+  background-color: rgb(38, 7, 7);
+  z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: block;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+/*  float: left; */
+}
+
+li a {
+  display:inline-block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+li:hover ul a {
+        background: rgba(38, 7, 7, 0.5);
+        height: 40px;
+        line-height: 40px;
+}
+
+li:hover ul a:hover {
+    background: #000000;
+   color: #fff;
+}
+
+li ul {
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.content {
+  width: 100%;
+/*  background-image: url(starsbg.jpg); */
+}
+
+.containerinfo {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+
+.containerinfo p, h1, h2 {
+  text-align: center;
+  color: #fff8f7;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+  line-height: 250%;
+}
+
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+
+}
+
+.container p, h1, h2 {
+  text-align: center;
+  color: #fff8f7;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+  line-height: 250%;
+}
+
+/* Imagegallery: */
+
+.containerflex {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gallery {
+    border: 1px solid rgb(38,7,7);
+    background-color: rgb(38,7,7);
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+.gallery:hover {
+    border: 1px solid rgb(255,255,255);
+}
+
+.gallery img {
+  height: 100%;
+  width: 80%;
+  border-radius: 80%;
+}
+
+.gallery p {
+  color: #fff8f7;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+}
+
+.galleryright {
+    border: 1px solid rgb(38,7,7);
+    background-color: rgb(38,7,7);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50%;
+}
+
+.galleryright:hover {
+    border: 1px solid rgb(255,255,255);
+}
+
+.galleryright img {
+  height: 100%;
+  width: 80%;
+  border-radius: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.galleryright p {
+  color: #fff8f7;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+}
+
+.pic {
+    justify-content: flex-start;
+    height: 90%;
+    width: 60%;
+    margin-top: 2%;
+}
+
+.desc {
+    text-align: left;
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  background-color: rgb(38, 7, 7);
+  color: rgb(255,255,255);
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+}
+
+#legediv {
+  width: 100%;
+  height: 50.4px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Responsive sectie: */
+
+/* Responsive menu: */
+
+/*De show menu knop wordt verborgen*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(38, 7, 7);
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*De vorm van het menu is een checkbox, daarna komt de lijst er uit*/
+input[type=checkbox]{
+    display: none;
+}
+/*Als je op de ckeckbox klikt komt het menu er uit*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 480px){
+
+  .gallery {
+      margin: 10%;
+      margin-top: 15px;
+      border: 1px solid rgb(38,7,7);
+      width: 80%;
+      height: 100%;
+      background-color: rgb(38,7,7)
+  }
+
+  .gallery img {
+      width: 100%;
+      height: 10%;
+  }
+
+
+    .containerflex{
+      flex-direction: column;
+    }
+
+
+
+    ul {
+        position: static;
+        display: none;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    ul li, nav li a {
+        width: 100%;
+    }
+
+    /*De show menu link*/
+    .show-menu {
+        display:block;
+    }
+
+    /* De overige elementen worden responsive gemaakt */
+    iframe {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5%;
+      border: 2px solid rgb(255,255,255);
+      height: 40%;
+      width: 90%;
+    }
+
+    .articlecontainer {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 2%;
+      margin-top: 2%;
+
+    }
+
+    .articlecontainer img {
+      width: 90%;
+      height: 60%;
+      float: right;
+    }
+
+
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 4%;
+      margin-top: 2%;
+
+    }
+
+    .containerinfo {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 4%;
+      margin-top: 2%;
+
+    }
+
+    .logo img  {
+      width: 60%;
+      height: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #legediv {
+      width: 100%;
+      height: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+
+}
