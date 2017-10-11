@@ -262,43 +262,9 @@ ul li a:hover + .hidden, .hidden:hover {
   margin-left: 30%;
 }
 
-
-/* Imagegallery: */
-.imagegallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.planetnav img:hover {
+  border: 1px inset rgb(255,255,255);
 }
-
-.gallery {
-    margin: 5%;
-    border: 1px solid rgb(38,7,7);
-    width: 180px;
-    background-color: rgb(38,7,7)
-}
-
-.gallery:hover {
-    border: 1px solid rgb(255,255,255);
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.desc {
-    text-align: center;
-}
-
-.gallery p {
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-}
-
-
->>>>>>> 2ceaa46e9972c33cfdbb791180243455430dbbb4
 
 .articlecontainer p {
   text-align: center;
