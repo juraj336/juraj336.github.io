@@ -263,41 +263,6 @@ ul li a:hover + .hidden, .hidden:hover {
   line-height: 250%;
 }
 
-/* Imagegallery: */
-.imagegallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery {
-    margin: 5%;
-    border: 1px solid rgb(38,7,7);
-    width: 180px;
-    background-color: rgb(38,7,7)
-}
-
-.gallery:hover {
-    border: 1px solid rgb(255,255,255);
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.desc {
-    text-align: center;
-}
-
-.gallery p {
-  color: #fff8f7;
-  font-family: 'Gentium Book Basic', serif;
-  overflow: hidden;
-}
-
-
 
 .articlecontainer p {
   text-align: center;
