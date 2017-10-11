@@ -135,6 +135,23 @@ ul li a:hover + .hidden, .hidden:hover {
   width: 100%;
 /*  background-image: url(starsbg.jpg); */
 }
+.container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+
+}
+
+
+.container p, h1, h2 {
+  text-align: center;
+  color: #fff8f7;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+  line-height: 250%;
+}
 
 .containerinfo {
   width: 50%;
