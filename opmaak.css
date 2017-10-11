@@ -33,6 +33,10 @@ a img {
   text-decoration: none;
 }
 
+img {
+  width: 80%;
+}
+
 /* De linkstijling */
 #menu a:link, #menu a:visited {
   color: rgb(255, 255, 255);
@@ -246,23 +250,55 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 /* Navigation Container Index.html */
-.navcontainer {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  background-color: red;
+.planetnav {
+    height: 30%;
+    background-color: red;
+    display: flex;
 }
 
-.navcontainer p, h1, h2 {
-  text-align: center;
+.planetnav img {
+  width: 20%;
+}
+
+<<<<<<< HEAD
+=======
+
+/* Imagegallery: */
+.imagegallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+    margin: 5%;
+    border: 1px solid rgb(38,7,7);
+    width: 180px;
+    background-color: rgb(38,7,7)
+}
+
+.gallery:hover {
+    border: 1px solid rgb(255,255,255);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    text-align: center;
+}
+
+.gallery p {
   color: #fff8f7;
   font-family: 'Gentium Book Basic', serif;
   overflow: hidden;
-  letter-spacing: 2px;
-  line-height: 250%;
 }
 
+
+>>>>>>> 2ceaa46e9972c33cfdbb791180243455430dbbb4
 
 .articlecontainer p {
   text-align: center;
