@@ -311,5 +311,10 @@ input[type=checkbox]:checked ~ #menu{
       padding: 0;
     }
 
+    .gallery {
+      width: 80%;
+      margin: 20%;
+    }
+
 
 }
