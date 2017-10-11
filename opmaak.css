@@ -246,6 +246,24 @@ ul li a:hover + .hidden, .hidden:hover {
   line-height: 250%;
 }
 
+/* Navigation Container Index.html */
+.navcontainer {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: red;
+}
+
+.navcontainer p, h1, h2 {
+  text-align: center;
+  color: #fff8f7;
+  font-family: 'Gentium Book Basic', serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+  line-height: 250%;
+}
+
 /* Imagegallery: */
 .imagegallery {
   display: flex;
