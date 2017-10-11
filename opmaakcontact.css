@@ -139,17 +139,15 @@ ul li a:hover + .hidden, .hidden:hover {
 	padding-top:35px;
 	padding-bottom:50px;
 	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
-  margin-top:30px;
-	margin-left: -260px;
+	margin-left: 33%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
 
 .feedback-input {
-	color:#3c3c3c;
+	color:rgb(37,7,7);
 	font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
 	font-size: 18px;
@@ -169,52 +167,15 @@ ul li a:hover + .hidden, .hidden:hover {
 .feedback-input:focus{
 	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
+	border: 3px solid rgb(255,0,0);
+	color: rgb(37,7,7);
 	outline: none;
   padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
-}
-
-/* Icons ---------------------------------- */
-#name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+	color:rgb(37,7,7);
+	border:rgb(37,7,7) solid 3px;
 }
 
 textarea {
@@ -233,16 +194,13 @@ input:focus, textarea:focus {
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
-	border: #fbfbfb solid 4px;
+	border: rgb(0,0,0) solid 4px;
 	cursor: pointer;
 	background-color: rgb(37,7,7);
 	color:white;
 	font-size:24px;
 	padding-top:22px;
 	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
 }
@@ -253,18 +211,13 @@ input:focus, textarea:focus {
 }
 
 .submit:hover {
-	color: #3498db;
+	color: rgb(37,7,7);
 }
 
 .ease {
 	width: 0px;
 	height: 74px;
 	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
 }
 
 .submit:hover .ease{
@@ -275,9 +228,8 @@ input:focus, textarea:focus {
 @media only screen and (max-width: 580px) {
 	#form-div{
 		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
+		width: 90%;
+		margin-left: 2.5%;
 		padding-left: 3%;
 		padding-right: 3%;
 	}
