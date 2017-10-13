@@ -264,6 +264,7 @@ ul li a:hover + .hidden, .hidden:hover {
 
 .planetnav img:hover {
   border: 1px inset rgb(255,255,255);
+  content:url("erthtransopteion1.png")
 }
 
 .articlecontainer p {
