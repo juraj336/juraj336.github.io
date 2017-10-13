@@ -486,6 +486,18 @@ input[type=checkbox]:checked ~ #menu{
       line-height: 150%;
     }
 
+    .planetnav a {
+      width: 50%;
+      height: 50%;
+    }
+
+    .planetnav img{
+      margin-right: 0px;
+    }
+
+    .planetnav {
+      height: 6%;
+    }
 
 
 }
