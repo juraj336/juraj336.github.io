@@ -1,4 +1,3 @@
  - About us/juraj
  - Tablet support
  - Optimization
- - Contact page fixen

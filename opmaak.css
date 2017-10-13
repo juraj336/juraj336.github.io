@@ -412,6 +412,14 @@ input[type=checkbox]:checked ~ #menu{
     }
 
     /* De overige elementen worden responsive gemaakt */
+
+    .parallaxscroll {
+      background-image: url('home_bg_mobile.jpg');
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+    }
+
     iframe {
       display: block;
       margin: 0 auto;
