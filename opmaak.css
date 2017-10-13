@@ -255,16 +255,51 @@ ul li a:hover + .hidden, .hidden:hover {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
+
 }
 
-.planetnav img {
+.planetnav img{
   width: 40%;
   margin-left: 30%;
+
+}
+.navplan1 {
+  background-image: url("earthtest.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  width: 100%;
+  margin-left: 13%;
 }
 
-.planetnav img:hover {
-  border: 1px inset rgb(255,255,255);
-  content:url("erthtransopteion1.png")
+.navplan2 {
+  background-image: url("mars.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  width: 100%;
+  margin-left: 0%;
+}
+
+.navplan3 {
+  background-image: url("hoth1.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  width: 100%;
+  margin-left: 0%;
+}
+
+.navplan1:hover {
+  background-image: url("erthtransopteion1.png")
+}
+
+.navplan2:hover {
+background-image: url("mrsiperaturloremipsumstanzisl.png")
+}
+
+.navplan3:hover {
+background-image: url("hodjpegintranzpngeigenlijkeenpngjuraj.png")
 }
 
 .articlecontainer p {
