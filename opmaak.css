@@ -540,6 +540,17 @@ input[type=checkbox]:checked ~ #menu{
 
 @media screen and (max-width : 1024px){
 
+  .parallaxscroll-info {
+    height: 15%;
+  }
+
+  .parallaxscroll-info1 {
+    height: 15%;
+  }
+
+  .parallaxscroll-info2 {
+    height: 15%;
+  }
 
 
     ul {
