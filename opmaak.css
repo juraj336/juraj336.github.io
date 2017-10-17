@@ -272,6 +272,13 @@ ul li a:hover + .hidden, .hidden:hover {
   margin-left: 13%;
 }
 
+.navplan1 a {
+  display: block;
+  text-indent:-9999px;
+  height: 100%;
+  width: 100%;
+}
+
 .navplan2 {
   background-image: url("mars.png");
   background-size:contain;
@@ -281,6 +288,13 @@ ul li a:hover + .hidden, .hidden:hover {
   margin-left: 0%;
 }
 
+.navplan2 a {
+  display: block;
+  text-indent:-9999px;
+  height: 100%;
+  width: 100%;
+}
+
 .navplan3 {
   background-image: url("hoth1.png");
   background-size:contain;
@@ -288,6 +302,13 @@ ul li a:hover + .hidden, .hidden:hover {
   transition: background-image 1s ease-in-out;
   width: 100%;
   margin-left: 0%;
+}
+
+.navplan3 a {
+  display: block;
+  text-indent:-9999px;
+  height: 100%;
+  width: 100%;
 }
 
 .navplan1:hover {
