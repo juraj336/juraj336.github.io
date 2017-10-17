@@ -146,6 +146,8 @@ ul li a:hover + .hidden, .hidden:hover {
 
 .gallery {
     margin: 5%;
+    margin-top: 12.5px;
+    margin-bottom: 15px;
     border: 1px solid rgb(38,7,7);
     box-shadow: 0 4px 8px 0 rgba(255,0,0,0.5);
     transition: 0.3s;
