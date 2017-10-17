@@ -554,6 +554,9 @@ input[type=checkbox]:checked ~ #menu{
       line-height: 150%;
     }
 
+    .navplan1 {
+      margin-left: 0%;
+    }
 
 
 }
