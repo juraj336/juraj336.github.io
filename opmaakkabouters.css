@@ -298,7 +298,9 @@ input[type=checkbox]:checked ~ #menu{
 
 @media screen and (max-width : 480px){
 
-
+  .gallery {
+      width: 80%;
+  }
 
     ul {
         position: static;
@@ -400,7 +402,9 @@ input[type=checkbox]:checked ~ #menu{
 
 @media screen and (max-width : 1024px){
 
-
+  .gallery {
+      width: 60%;
+  }
 
     ul {
         position: static;

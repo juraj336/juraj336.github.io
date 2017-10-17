@@ -152,7 +152,7 @@ ul li a:hover + .hidden, .hidden:hover {
     box-shadow: 0 4px 8px 0 rgba(255,0,0,0.5);
     transition: 0.3s;
     width: 20%;
-    background-color: rgb(38,7,7)
+    background-color: rgb(38,7,7);
 }
 
 .gallery:hover {
