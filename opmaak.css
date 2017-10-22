@@ -420,6 +420,30 @@ background-image: url("hodjpegintranzpngeigenlijkeenpngjuraj.png")
   padding: 0;
 }
 
+/* Return Button */
+.returnbutton input {
+  margin-bottom: 3%;
+  background-color: rgb(38, 7, 7);
+  color: #fff;
+  border: rgb(38,7,7);
+  letter-spacing: 1px;
+  padding: 24px 40px;
+  font-size: 32px;
+  border-radius: 4px;
+  line-height: 1.5;
+  text-decoration:none;
+
+}
+
+.returnbutton {
+  text-align: center;
+}
+
+.returnbutton input:hover {
+  background-color: rgb(255,0,0);
+
+}
+
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Responsive sectie: */
