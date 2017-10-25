@@ -100,7 +100,7 @@ li:hover ul a {
 
 li:hover ul a:hover {
     background: #000000;
-   color: #fff;
+    color: #fff;
 }
 
 li ul {
@@ -132,7 +132,7 @@ ul li a:hover + .hidden, .hidden:hover {
 	padding-top:0px;
 }
 
-#form-div {
+#form {
 	background-color:rgba(37,7,7,0.4);
 	padding-left:35px;
 	padding-right:35px;
@@ -146,12 +146,9 @@ ul li a:hover + .hidden, .hidden:hover {
   -webkit-border-radius: 7px;
 }
 
-.feedback-input {
+.input {
 	color:rgb(37,7,7);
-	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
 	font-size: 18px;
-	border-radius: 0;
 	line-height: 22px;
 	background-color: #fbfbfb;
 	padding: 13px 13px 13px 54px;
