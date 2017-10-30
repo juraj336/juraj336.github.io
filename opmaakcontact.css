@@ -322,7 +322,7 @@ input[type=checkbox]:checked ~ #menu{
 
 @media screen and (max-width : 1024px){
 
-  #form-div{
+  #form{
     left: 3%;
     width: 60%;
     margin-left: 17%;
