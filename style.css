@@ -73,12 +73,27 @@ h1 {
   top: 98%;
 }
 #hotspot2 {
-  left: 23.975%;
-  top: 51.85%;
+  left: 75.5%;
+  top: 32%;
 }
 #hotspot3 {
-  right: 11%;
-  bottom: 12%;
+  right: 52%;
+  bottom: 22%;
+}
+
+#hotspot4 {
+  right: 35.2%;
+  bottom: 15.3%;
+}
+
+#hotspot5 {
+  right: 28%;
+  bottom: 50%;
+}
+
+#hotspot6 {
+  right: 45%;
+  top: 45%;
 }
 .popup__inner {
   padding: 20px 15px;
