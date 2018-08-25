@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Raund';
+  src: url('../fonts/Raund-Bold-webfont.eot');
+  src: url('../fonts/Raund-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Raund-Bold-webfont.woff2') format('woff2'), url('../fonts/Raund-Bold-webfont.woff') format('woff'), url('../fonts/Raund-Bold-webfont.ttf') format('truetype'), url('../fonts/Raund-Bold-webfont.svg#raundbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raund';
+  src: url('../fonts/Raund-Italic-webfont.eot');
+  src: url('../fonts/Raund-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Raund-Italic-webfont.woff2') format('woff2'), url('../fonts/Raund-Italic-webfont.woff') format('woff'), url('../fonts/Raund-Italic-webfont.ttf') format('truetype'), url('../fonts/Raund-Italic-webfont.svg#raunditalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Raund';
+  src: url('../fonts/Raund-webfont.eot');
+  src: url('../fonts/Raund-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Raund-webfont.woff2') format('woff2'), url('../fonts/Raund-webfont.woff') format('woff'), url('../fonts/Raund-webfont.ttf') format('truetype'), url('../fonts/Raund-webfont.svg#raundregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+:focus {
+  outline: none;
+}
+body {
+  font-family: 'Raund';
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.column {
+  padding: 0 15px;
+}
+header {
+  padding: 30px 0;
+  background: #00174f;
+  box-shadow: #000000 0 0 7px;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.map-wrapper {
+  background: #0e297f;
+}
+.map {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.map__img {
+  display: none;
+}
+.map__hotspot {
+  display: block;
+  background: #ffd200;
+  border: 2px solid #fff;
+  cursor: pointer;
+  -webkit-transition: background .3s linear;
+          transition: background .3s linear;
+  text-decoration: none;
+  color: #011852;
+}
+#hotspot1 {
+  left: 66%;
+  top: 98%;
+}
+#hotspot2 {
+  left: 23.975%;
+  top: 51.85%;
+}
+#hotspot3 {
+  right: 11%;
+  bottom: 12%;
+}
+.popup__inner {
+  padding: 20px 15px;
+}
+.map__hotspot:focus .popup {
+  display: inline-block;
+}
+.popup__title {
+  margin: 0;
+}
+.popup__text {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+}
+.popup__text br {
+  display: none;
+}
+.map__hotspot:focus .popup__text {
+  height: auto;
+}
+.description {
+  background: #ffd200;
+}
+.description__title {
+  margin: 0;
+  padding: 15px 0;
+  background: #fff;
+  text-align: center;
+  font-size: 25px;
+  color: #011852;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.description__content {
+  margin: 30px 0;
+  padding: 20px;
+  border: 9px solid #fff;
+  border-radius: 4px;
+}
+.description__content p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #00174f;
+}
+footer {
+  padding: 50px 0;
+  background: #00174f;
+  text-align: center;
+}
+footer p {
+  font-size: 25px;
+  font-style: italic;
+  color: #688cff;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .map__inner {
+    position: relative;
+    height: 0;
+    padding-bottom: 52.91666666666667%;
+  }
+  .map__img {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .map__hotspot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .map__hotspot:hover,
+  .map__hotspot:focus {
+    background: #fff;
+  }
+  .popup {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+    position: absolute;
+  }
+  .popup__inner {
+    display: inline-block;
+    white-space: nowrap;
+    background: #ffd200;
+    border: 9px solid #fff;
+    border-radius: 4px;
+  }
+  .map__hotspot:focus .popup {
+    opacity: 1;
+    width: auto;
+    height: auto;
+  }
+  .popup--left-top {
+    right: 20px;
+    bottom: -1px;
+  }
+  .popup--right-top {
+    left: 20px;
+    bottom: -1px;
+  }
+  .popup--left-bottom {
+    right: 20px;
+    top: -1px;
+  }
+  .popup--right-bottom {
+    left: 20px;
+    top: -1px;
+  }
+  .popup__text {
+    height: auto;
+  }
+  .popup__text br {
+    display: block;
+  }
+  .description__content p {
+    font-size: 30px;
+  }
+}
